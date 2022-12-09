@@ -3,9 +3,19 @@
   <title>Things</title>
 </head>
 <body>
-  <h1>
-    Things
-  </h1>
+<h1>Things</h1>
+
   <p>Some stuff about things goes here.</p>
+
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit">
+  </form>
+
 </body>
 </html>
